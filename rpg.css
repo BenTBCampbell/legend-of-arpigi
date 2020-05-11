@@ -1,0 +1,147 @@
+  #mygame{
+      width: 800px;
+      height: 600px;
+  }
+  
+  #container{
+      display: none;
+      width: 800px;
+      height: 600px;
+      top: 0px;
+      background-color: black;
+      position: fixed;
+      overflow: hidden;
+      z-index: 2;
+  }
+  
+  #startScreen{
+      width: 800px;
+      height: 600px;
+      top: -0px;
+      background-image: url("images/other/start.png");
+      cursor: pointer;
+      position: absolute;
+      z-index: 3;
+  }
+  
+  #console{
+      font-family: cursive;
+      color: #FFF;
+      width: 770px;
+      height: 20px;
+      padding: 15px;
+      position: absolute;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 3000;
+  }
+  
+  body{
+      background-color: black;
+  }
+  
+  .object{
+      z-index: 100;
+  }
+  
+ .screen {
+     width: 800px;
+     height: 600px;
+     top: 0px;
+     background-color: DimGray;
+     font-family: Arial;
+     text-align: center;
+     display: none;
+     position: absolute;
+     z-index: 1;
+ }
+ 
+ h1 {
+     color: red;
+     height: 100px;
+     width: 800px;
+ }
+ 
+ .input{
+     width: 800px;
+     height: 80px;
+ }
+ 
+ span{
+     font-family: cursive;
+ }
+ 
+ a{
+     text-decoration: none;
+     color: black;
+     position: relative;
+     top: 18px;
+     padding: 20px 16px 17px 16px;
+     border: 3px solid black;
+     border-radius: 10px;
+     font-size: 30px;
+     background-color: blue;
+ }
+ 
+ .button-left{
+     margin: 50px 0px 0px 200px;
+     float: left;
+     cursor: pointer;
+     text-align: center;
+ }
+ 
+ .button-right{
+     border: 3px solid black;
+     margin: 50px 200px 0px 0px;
+     float: right;
+     cursor: pointer;
+ }
+ 
+ #session-name{
+     font-family: arial;
+ }
+ 
+ .red{
+     background-color: red;
+ }
+ 
+ .green{
+     background-color: #00FF00;
+ }
+ #test{
+     z-index: 100000;
+ }
+/* 
+ #scientist1{
+     border: 1px solid blue
+ }
+ 
+ #cowboy1Coll{
+     border: 1px solid blue
+ }
+ 
+ #skeleton1{
+     border: 1px solid red
+ }
+ 
+ #ogre1{
+     border: 1px solid red
+ }
+ 
+ #colzone{
+     border: 1px solid purple
+ }*/
+/* #avatar{
+     border: 1px solid yellow
+ }
+ #hitzone{
+     border: 1px solid pink
+ }
+ #weapon{
+     border: 1px solid purple
+ }*/
+
+/*.gf_sprite.gf_line_5.gf_column_5{
+    border-radius: 100px;
+    
+}*/

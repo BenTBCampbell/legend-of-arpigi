@@ -1,0 +1,38 @@
+#mygame{
+    width: 800px;
+    height: 600px;
+}
+
+#container{
+    display: none;
+    width: 800px;
+    height: 600px;
+    background-color: black;
+}
+
+#startScreen{
+    width: 800px;
+    height: 600px;
+    background-image: url("../images/other/start.png");
+    cursor: pointer;
+}
+
+#console{
+    font-family: cursive;
+    color: #FFF;
+    width: 770px;
+    height: 20px;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 3000;
+}
+
+body{
+    background-color: black;
+}
+
+.object{
+    z-index: 100;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RPG Game</title>
+        <link rel='stylesheet' type='text/css' href='rpg.css'/>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script type='text/javascript' src='gf.js'></script>
+        <script type='text/javascript' src='rpg.js'></script>
+    </head>
+    <body>
+        <div id = "mygame">
+            <!--<div style= "background: rgba(0,0,0,0.5); padding: 5px; color: #FFF; width: 192px; position: absolute;" id="test">Press Start 2P Joe</div>-->
+            <div id ="session" class="screen"> 
+                <h1><span id ='session-name'></span>'s Session Continue</h1>
+                <a class = "button-right green" id = "session-continue" href = "#">Continue</a>
+                <a class = "button-left red" id = "session-logout" href = "#">Logout</a>
+            </div>
+            <div id = "login" class = "screen"> 
+                <h1>Login</h1>
+                <div class= "input"><span>Name:</span><input id = "login-name" type = "text"/></div>
+                <div class = "input"><span>Password:</span><input id = "login-pw" type = "password"/></div>
+                <a class = "button-right green" id = "login-create" href = "#">Create</a>
+                <a class = "button-left green" id = "login-login" href = "#">Login</a>
+            </div>
+            <div id = "create" class = "screen">
+                <h1>Create an account</h1>
+                <div class= "input"><span>Name:</span><input id = "create-name" type = "text"/></div>
+                <div class = "input"><span>Password:</span><input id = "create-pw" type = "password"/></div>
+                <a class = "button-left red" id = "create-cancel" href = "#">Cancel</a>
+                <a class = "button-right green" id = "create-create" href = "#">Create</a>
+            </div>
+        </div>
+    </body>
+</html>
