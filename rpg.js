@@ -74,6 +74,17 @@ $(function() {
         return false;
     });
 
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        console.log(this.responseText)
+        // var myObj = JSON.parse(this.responseText);
+        // document.getElementById("demo").innerHTML = myObj.name;
+      }
+    };
+    xmlhttp.open("GET", "php_files/session.php", true);
+    xmlhttp.send();
+
     $.getJSON(
             "php_files/session.php",
             function(json) {
@@ -88,6 +99,13 @@ $(function() {
                     $("#login").css("display", "block");
                 }
             }
+    );
+
+    $.getJSON(
+        "php_files/session.php",
+        function(json) {
+            console.log("success!")
+        }
     );
 
     var playerAnim = {
