@@ -74,17 +74,6 @@ $(function() {
         return false;
     });
 
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        console.log(this.responseText)
-        // var myObj = JSON.parse(this.responseText);
-        // document.getElementById("demo").innerHTML = myObj.name;
-      }
-    };
-    xmlhttp.open("GET", "php_files/session.php", true);
-    xmlhttp.send();
-
     $.getJSON(
             "php_files/session.php",
             function(json) {
@@ -107,6 +96,17 @@ $(function() {
             console.log("success!")
         }
     );
+
+    // $("#create").css("display", "block");
+    // bypass creating an account cuz php ain't working.
+    function skipMakingAccount(json) {
+        name = $("#create-name").val();
+        initialPlayerPos.x = json.x;
+        initialPlayerPos.y = json.y;
+        initialPlayerPos.dir = json.dir;
+        $("#create").css("display", "none");
+        gf.startGame(initialize);
+    }
 
     var playerAnim = {
         stand: {
@@ -1105,6 +1105,6 @@ $(function() {
 
     $("#startScreen").click(function() {
         $("#startScreen").remove();
-    
+        skipMakingAccount({ "x" : 160, "y" : 160, "dir" : 0})
     });
 });
