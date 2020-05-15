@@ -1,6 +1,8 @@
   #mygame{
       width: 800px;
       height: 600px;
+      margin: auto;
+      overflow: hidden;
   }
   
   #container{
@@ -9,7 +11,7 @@
       height: 600px;
       top: 0px;
       background-color: black;
-      position: fixed;
+      /* position: fixed; */
       overflow: hidden;
       z-index: 2;
   }

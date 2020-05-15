@@ -3,6 +3,7 @@ $(function() {
     var name;
     var initialPlayerPos = {};
     gf.initialize({baseDiv: $("#mygame"), width: 800, height: 600});
+    gf.autoScaleToWindow($("#mygame"));
     $("#mygame").append("<div id = 'startScreen'></div>");
 
     // Manage account (login, create, continue)

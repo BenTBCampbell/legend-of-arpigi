@@ -608,3 +608,13 @@ gf.keyboard = [];
 $(document).keyup(function(event){
     gf.keyboard[event.keyCode] = false;
 });
+
+gf.autoScaleToWindow = function(div) {
+    function scaleDivToWindow () {
+        div.css("transform-origin", "top center");
+        div.css("transform", "scale(" + window.innerHeight / (div.outerHeight(true) + 10) +")");
+    }
+
+    $(window).resize(scaleDivToWindow);
+    scaleDivToWindow()
+}
